@@ -48,6 +48,8 @@ public class ActivitiDatadourceConfig extends AbstractProcessEngineAutoConfigura
         configuration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
         configuration.setJobExecutorActivate(true);
         configuration.setTransactionManager(transactionManager());
+        configuration.setActivityFontName("宋体");
+        configuration.setLabelFontName("宋体");
         return configuration;
     }
 }
